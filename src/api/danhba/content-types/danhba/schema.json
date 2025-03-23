@@ -1,0 +1,53 @@
+{
+  "kind": "collectionType",
+  "collectionName": "danhbas",
+  "info": {
+    "singularName": "danhba",
+    "pluralName": "danhbas",
+    "displayName": "Danhba",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "code": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "address": {
+      "type": "string",
+      "required": true
+    },
+    "management_level": {
+      "type": "enumeration",
+      "enum": [
+        "Tuyến xã",
+        "Tuyến huyện",
+        "Tuyến tỉnh"
+      ]
+    },
+    "ranking": {
+      "type": "enumeration",
+      "enum": [
+        "Hạng 1",
+        "Hạng 2",
+        "Hạng 3",
+        "Chưa xếp hạng"
+      ]
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "Bệnh viện",
+        "Phòng khám",
+        "Trung tâm y tế"
+      ]
+    }
+  }
+}
